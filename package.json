@@ -1,7 +1,7 @@
 {
   "name": "projet-secret",
   "version": "1.0.0",
-  "description": "Site pour la NSI",
+  "description": "Projet de NSI\nEsteban, Baptiste",
   "main": "index.html",
   "scripts": {
     "start": "serve",
@@ -11,7 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/codesandbox-app/static-template.git"
   },
-  "keywords": [],
+  "keywords": [
+    "static"
+  ],
   "author": "Ives van Hoorne",
   "license": "MIT",
   "bugs": {

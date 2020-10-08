@@ -1,0 +1,446 @@
+@font-face {
+  font-family: "Procyon";
+  src: url(../fonts/Proc2.ttf);
+}
+
+@font-face {
+  font-family: "RajdhaniM";
+  src: url(../fonts/Rajdhani-Medium.ttf);
+}
+
+@font-face {
+  font-family: "RajdhaniB";
+  src: url(../fonts/Rajdhani-Bold.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #333;
+  font-family: RajdhaniM;
+}
+
+ul.navbar {
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  margin-top: 10px;
+  padding-top: 5px 0 0 0;
+  vertical-align: middle;
+}
+
+ul.navbar li {
+  display: inline;
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+.branding {
+  font-weight: bolder;
+  color: white;
+  font-size: 40px;
+  font-family: RajdhaniB;
+}
+.branding:hover,
+.banding:focus {
+  color: orange;
+}
+
+nav {
+  background: #111111;
+  padding: 10px 30px 10px 30px;
+  box-shadow: 0px 2px 5px red;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  margin-top: 5px;
+  transition-duration: 0.5s;
+}
+
+a:hover,
+a:focus {
+  color: white;
+}
+
+.slideshow {
+  background-color: ghostwhite;
+  height: 90vh;
+  background: url(/assets/images/background1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slideshow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middleCard {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.middleCard h1 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Procyon;
+  font-size: 50px;
+  align-items: middle;
+}
+
+.middleCard p {
+  color: lightgray;
+}
+
+.btn {
+  background: orange;
+  color: white;
+  padding: 10px;
+  box-shadow: 10px 10px black;
+  transition-duration: 0.5s;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  box-shadow: 0px 0px orange;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.features .feat {
+  margin: 5px;
+  background: #111;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  flex-grow: 1;
+  flex: 1;
+  transition: 0.5s;
+  border: 1px #111 solid;
+}
+
+.feat:hover {
+  box-shadow: 0px 0px 5px orange;
+  border: 1px orange solid;
+}
+
+.icone {
+  width: 100px;
+}
+
+.presentation1,
+.presentation2 {
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.presentation1 .para,
+.presentation2 .para {
+  flex: 7;
+}
+
+.presentation1 img,
+.presentation2 img {
+  flex: 3;
+}
+
+.para h1 {
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.para p {
+  font-size: 20px;
+}
+
+.presentation1 img {
+  transition-duration: 0.5s;
+}
+
+.presentation1 img:hover {
+  transform: rotateZ(10deg) scale(0.8, 0.8);
+}
+
+#footer {
+  margin: 0;
+  padding: 0;
+  border-top: solid;
+  border-top-width: 5px;
+  border-color: black;
+  background-image: url("https://external-preview.redd.it/k47n36qbJ-vGqRWD6anCFGFUKtsOanjCTI7lMZMW9_o.png?auto=webp&s=df991209499f3a2f4d3a81b76269f3b140e60144");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  animation-name: animFooter;
+  animation-duration: 300s;
+  animation-iteration-count: infinite;
+}
+
+#footer div {
+  margin: 0;
+  padding: 0;
+  float: left;
+  color: white;
+  font-family: RajdhaniM;
+}
+
+#footer li {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+}
+
+#footer ul {
+  margin: 0;
+  padding: 0;
+  bottom: 100px;
+  font-size: 26px;
+  text-align: center;
+  font-family: RajdhaniB;
+}
+
+#footer img {
+  width: 40px;
+}
+
+#Reseaux p {
+  padding: 0;
+  margin: 0;
+}
+
+.otherPageContainer {
+  color: white;
+  padding: 20px;
+  background: url(/assets/images/background3.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: anim1;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  font-size: 20px;
+}
+
+.otherPageContainer .otherCard {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 25px 0px;
+}
+
+.otherPageContainer .otherCard .title {
+  text-align: center;
+  font-size: 60px;
+}
+
+.alert-red {
+  color: white;
+  background: red;
+  border-left: 5px tomato solid;
+  border-radius: 0px 10px 10px 0px;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* Animation Page Secondaire*/
+@keyframes anim1 {
+  0% {
+    background-position: top;
+  }
+  50% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: top;
+  }
+}
+
+#menuBtn {
+  display: none;
+}
+
+/* OPTIMISER POUR MOBILE */
+@media only screen and (max-width: 600px) {
+  ul.navbar,
+  ul.navbar li,
+  .branding {
+    display: block;
+    float: none;
+  }
+
+  .branding {
+    border-bottom: 1px grey solid;
+    display: inline;
+  }
+
+  ul.navbar {
+    margin-top: 5px;
+    padding-left: 0px !important;
+  }
+
+  .features {
+    display: initial;
+  }
+
+  .Arrows img {
+    width: 50px;
+    opacity: 1 !important;
+  }
+
+  .Arrows img:hover {
+    width: 50px !important;
+  }
+
+  .presentation1,
+  .presentation2 {
+    flex-direction: column;
+  }
+  .presentation1 *,
+  .presentation2 * {
+    flex: 0;
+  }
+
+  .presentation1 .para {
+    order: 1;
+  }
+
+  #menuBtn {
+    display: initial;
+    float: right;
+  }
+}
+
+/* ARROWS */
+
+.Arrows img {
+  transition-duration: 0.8s;
+  width: 50px;
+  opacity: 0.5;
+}
+
+.Arrows img:hover {
+  transition-duration: 0.8s;
+  width: 80px;
+  opacity: 1;
+}
+
+.endFunction {
+  padding: 5px 20px;
+  background: black;
+  box-shadow: 8px 8px white;
+  color: white;
+  font-size: 20px;
+}
+
+.endFunction::before {
+  content: "// ";
+}
+
+.endFunction:hover::before {
+  content: "/* ";
+}
+
+.endFunction:hover::after {
+  content: " */";
+}
+
+hr {
+  border: 0;
+  border-top: 5px dotted gray;
+}
+/* Style de la scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background: orange;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkorange;
+}
+
+/* COOKIES */
+/*
+#cookies {
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  max-width: 70vw;
+  text-align: center;
+  margin: 10px;
+  background-image: url(/assets/images/cookies.jpg);
+  padding: 20px;
+  cursor: default;
+  text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
+  border-radius: 20px;
+}
+#cookies button p {
+  border: none;
+  display: inline-block;
+  padding: auto;
+  text-align: center;
+  text-decoration: none;
+}*/
+
+/* Animation footer */
+
+@keyframes animFooter {
+  0% {
+    background-position: top;
+  }
+  10% {
+    background-position: right;
+  }
+  10% {
+    background-position: left;
+  }
+  30% {
+    background-position: right;
+  }
+  40% {
+    background-position: bottom;
+  }
+  50% {
+    background-position: top;
+  }
+  60% {
+    background-position: left;
+  }
+  70% {
+    background-position: bottom;
+  }
+  80% {
+    background-position: right;
+  }
+  90% {
+    background-position: left;
+  }
+  100% {
+    background-position: top;
+  }
+}
