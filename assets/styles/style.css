@@ -82,6 +82,7 @@ a:focus {
 .middleCard {
   padding: 10px;
   background: rgba(0, 0, 0, 0.5);
+  padding-bottom: 30px;
 }
 
 .middleCard h1 {
@@ -175,6 +176,14 @@ a:focus {
 }
 
 .presentation1 img:hover {
+  transform: rotateZ(-10deg) scale(0.8, 0.8);
+}
+
+.presentation2 img {
+  transition-duration: 0.5s;
+}
+
+.presentation2 img:hover {
   transform: rotateZ(10deg) scale(0.8, 0.8);
 }
 

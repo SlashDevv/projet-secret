@@ -1,13 +1,13 @@
-let navlinks = document.getElementById("navlinks");
-let menuContract = true;
+let menuContract = false;
 function menuChange() {
-  alert(menuContract);
   if (menuContract) {
     menuContract = false;
-    navlinks.style.display = "initial";
+    document.getElementById("navlinks").style.display = "initial";
+    document.getElementById("brand").style.borderBottom = "1px grey solid";
   } else {
     menuContract = true;
-    navlinks.style.display = "none";
+    document.getElementById("navlinks").style.display = "none";
+    document.getElementById("brand").style.borderBottom = "0px grey solid";
   }
 }
 
