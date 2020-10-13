@@ -18,6 +18,7 @@ body {
   padding: 0;
   background: #333;
   font-family: RajdhaniM;
+  overflow-x: hidden;
 }
 
 ul.navbar {
@@ -136,6 +137,7 @@ a:focus {
 .feat:hover {
   box-shadow: 0px 0px 5px orange;
   border: 1px orange solid;
+  transform: scale(1.05, 1.05);
 }
 
 .icone {
@@ -188,6 +190,11 @@ a:focus {
 }
 
 #footer {
+  background: #111;
+  margin: 0;
+  padding: 0;
+}
+/*#footer {
   margin: 0;
   padding: 0;
   border-top: solid;
@@ -195,7 +202,7 @@ a:focus {
   border-color: black;
   background-image: url("https://external-preview.redd.it/k47n36qbJ-vGqRWD6anCFGFUKtsOanjCTI7lMZMW9_o.png?auto=webp&s=df991209499f3a2f4d3a81b76269f3b140e60144");
   background-repeat: no-repeat;
-  background-size: 150%;
+  background-size: 150%;  
   animation-name: animFooter;
   animation-duration: 300s;
   animation-iteration-count: infinite;
@@ -207,33 +214,111 @@ a:focus {
   float: left;
   color: white;
   font-family: RajdhaniM;
-}
-
-#footer li {
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
+}*/
+.ft-social ul li {
   list-style-type: none;
   display: inline-block;
   text-align: center;
 }
 
-#footer ul {
-  margin: 0;
-  padding: 0;
-  bottom: 100px;
-  font-size: 26px;
-  text-align: center;
-  font-family: RajdhaniB;
+.ft-social ul li a {
+  background: red;
+  color: white;
+  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+  font-size: 30px;
 }
 
-#footer img {
-  width: 40px;
+#discordbtn {
+  background: rgb(0, 84, 255);
+  background: linear-gradient(
+    142deg,
+    rgba(0, 84, 255, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+#instabtn {
+  background: rgb(203, 0, 255);
+  background: linear-gradient(
+    142deg,
+    rgba(203, 0, 255, 1) 0%,
+    rgba(255, 169, 0, 1) 100%
+  );
+}
+
+#twitterbtn {
+  background: rgb(203, 217, 252);
+  background: linear-gradient(
+    142deg,
+    rgba(203, 217, 252, 1) 0%,
+    rgba(0, 164, 214, 1) 100%
+  );
+}
+
+.ft-social ul {
+  font-size: 26px;
+  text-align: center;
 }
 
 #Reseaux p {
   padding: 0;
   margin: 0;
+}
+
+#ft-copyright {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 3%;
+  background-color: black;
+  text-align: center;
+  color: whitesmoke;
+}
+
+#ft-copyright a {
+  text-decoration: underline;
+}
+
+#ft-info {
+  flex: 2;
+  margin-left: 10px !important;
+}
+.ft-links {
+  flex: 1;
+}
+.ft-download {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  background-image: url("https://external-preview.redd.it/k47n36qbJ-vGqRWD6anCFGFUKtsOanjCTI7lMZMW9_o.png?auto=webp&s=df991209499f3a2f4d3a81b76269f3b140e60144");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  animation-name: animFooter;
+  animation-duration: 300s;
+  animation-iteration-count: infinite;
+  width: 100%;
+}
+
+.ft-download .btn {
+  float: right;
+  display: inline;
+  margin-right: 30px;
+}
+
+.ft-download h1 {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+  display: inline;
+}
+
+.row {
+  padding: 10px;
+  color: white;
+  display: flex;
 }
 
 .otherPageContainer {
@@ -287,7 +372,7 @@ a:focus {
 }
 
 /* OPTIMISER POUR MOBILE */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   ul.navbar,
   ul.navbar li,
   .branding {
@@ -334,6 +419,20 @@ a:focus {
   #menuBtn {
     display: initial;
     float: right;
+  }
+
+  .row {
+    display: initial;
+  }
+
+  .ft-links {
+    margin-left: 10px;
+  }
+
+  .ft-download .btn {
+    display: block;
+    float: none;
+    text-align: center;
   }
 }
 
@@ -392,6 +491,9 @@ hr {
   background: darkorange;
 }
 
+.col1 {
+  flex: 1;
+}
 /* COOKIES */
 /*
 #cookies {
@@ -453,3 +555,82 @@ hr {
     background-position: top;
   }
 }
+
+#engrenage:hover img {
+  animation-name: animEngrenage;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+#engrenage img {
+  transform: rotate(0deg);
+  animation-duration: 2s;
+}
+
+@keyframes animEngrenage {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#pioche:hover img {
+  animation-name: animPioche;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#pioche img {
+  transform: rotate(0deg);
+  animation-duration: 2s;
+}
+
+@keyframes animPioche {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(-40deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  66% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#planete:hover img {
+  animation-name: animPlanete;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#planete img {
+  filter: none;
+  animation-duration: 2s;
+}
+/*
+@keyframes animPlanete {
+  0% {
+    filter: 
+  }
+  33% {
+    transform: rotate(-40deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  66% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+*/

@@ -51,17 +51,6 @@ let diapos = [
   }
 ];
 
-function edValueKeyPress() {
-  var edValue = document.getElementById("edValue");
-  var s = edValue.value;
-
-  var lblValue = document.getElementById("lblValue");
-  lblValue.innerText = "The text box contains: " + s;
-
-  //var s = $("#edValue").val();
-  //$("#lblValue").text(s);
-}
-
 //
 // function Cookies() {
 //   setTimeout(() => {
@@ -75,3 +64,25 @@ function edValueKeyPress() {
 //   document.getElementById("cookies").style.display = "none";
 //}
 //
+var cooldown = true;
+
+function uniCharCode(event) {
+  var char = event.keyCode;
+  console.log(char);
+  if (char === 39 && cooldown === true) {
+    console.log("+1");
+    UpdatePlus1();
+    cooldown = false;
+    setTimeout(() => {
+      cooldown = true;
+    }, 200);
+  }
+  if (char === 37 && cooldown === true) {
+    console.log("-1");
+    UpdateLess1();
+    cooldown = false;
+    setTimeout(() => {
+      cooldown = true;
+    }, 200);
+  }
+}
